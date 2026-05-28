@@ -58,14 +58,15 @@ export default function Home() {
               </div>
             ))}
 
-            <Row label="Length" values={["9 days", "7 days", "7 days"]} />
+            <Row label="Length" values={["9 days", "7 days", "9 days"]} />
             <Row label="Travel" values={["Fly + drive", "Drive from JAI", "Drive from JAI"]} />
-            <Row label="Bases" values={["6 stops", "1 resort (4N)", "Sarahan · Sangla · Kalpa"]} />
-            <Row label="Highest point" values={["~Munnar 5,800ft", "Palampur ~4,300ft", "Chitkul 11,300ft"]} />
-            <Row label="Longest drive" values={["4 hr", "8.5 hr highway", "10 hr (Day 6)"]} />
-            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐"]} />
+            <Row label="Bases" values={["6 stops", "1 resort (4N)", "Mashobra 2N · Kalpa 2N · Sangla 1N"]} />
+            <Row label="Highest point" values={["Munnar 5,800ft", "Palampur 4,300ft", "Chitkul 11,300ft"]} />
+            <Row label="Longest drive" values={["4 hr", "8.5 hr highway", "8 hr (Day 4)"]} />
+            <Row label="Return capped at" values={["—", "—", "≤8 hr/day"]} />
+            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐"]} />
             <Row label="Vibe" values={["Houseboat + beach", "Tea estate spa", "Apple country + Tibet edge"]} />
-            <Row label="Budget" values={["₹5.3-7.6L", "₹5.0-6.1L", "₹4.2-5.5L"]} />
+            <Row label="Budget" values={["₹5.3-7.6L", "₹5.0-6.1L", "₹5.4-6.9L"]} />
           </div>
         </section>
 
