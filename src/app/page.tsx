@@ -58,14 +58,14 @@ export default function Home() {
               </div>
             ))}
 
-            <Row label="Length" values={["9 days", "7 days", "9 days"]} />
-            <Row label="Travel mode" values={["Fly + self-drive", "Drive from Jaipur", "Fly + chauffeur"]} />
-            <Row label="Climate" values={["Monsoon onset", "Pre-monsoon clear", "Pre-monsoon"]} />
-            <Row label="Pace" values={["Relaxed (Marari 2N)", "Chill (1 resort 4N)", "Active 7-stop loop"]} />
-            <Row label="Longest drive" values={["4 hr", "8.5 hr (highway)", "7 hr+"]} />
-            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐"]} />
-            <Row label="Wow factor" values={["Houseboat", "Tea-estate spa", "Kanchenjunga"]} />
-            <Row label="Budget" values={["₹5.3-7.6L", "₹5.0-6.1L", "₹9.2-12.2L"]} />
+            <Row label="Length" values={["9 days", "7 days", "7 days"]} />
+            <Row label="Travel" values={["Fly + drive", "Drive from JAI", "Drive from JAI"]} />
+            <Row label="Bases" values={["6 stops", "1 resort (4N)", "2 cities (3N + 3N)"]} />
+            <Row label="Climate" values={["Monsoon onset", "Pre-monsoon", "Pre-monsoon"]} />
+            <Row label="Longest drive" values={["4 hr", "8.5 hr highway", "10.5 hr highway"]} />
+            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐"]} />
+            <Row label="Vibe" values={["Houseboat + beach", "Tea estate spa", "Ghats + hill station"]} />
+            <Row label="Budget" values={["₹5.3-7.6L", "₹5.0-6.1L", "₹4.7-6.0L"]} />
           </div>
         </section>
 

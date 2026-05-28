@@ -43,15 +43,29 @@ export function PlanOverview({ plan }: { plan: Plan }) {
       {/* Travel */}
       <Section
         icon={<Plane size={14} />}
-        label={plan.slug === "himachal" ? "Drive — Jaipur ↔ Palampur" : "Flights"}
+        label={
+          plan.slug === "himachal"
+            ? "Drive — Jaipur ↔ Palampur"
+            : plan.slug === "rishikesh"
+            ? "Drive — Jaipur ↔ Rishikesh ↔ Mussoorie"
+            : "Flights"
+        }
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <FlightCard
-            title={plan.slug === "himachal" ? "Outbound (Days 1–2)" : `Outbound · ${shortDate(plan.startDate)}`}
+            title={
+              plan.slug === "himachal" || plan.slug === "rishikesh"
+                ? "Outbound legs"
+                : `Outbound · ${shortDate(plan.startDate)}`
+            }
             flights={plan.flights.outbound}
           />
           <FlightCard
-            title={plan.slug === "himachal" ? "Return (Days 6–7)" : `Return · ${shortDate(plan.endDate)}`}
+            title={
+              plan.slug === "himachal" || plan.slug === "rishikesh"
+                ? "Return legs"
+                : `Return · ${shortDate(plan.endDate)}`
+            }
             flights={plan.flights.return}
           />
         </div>
