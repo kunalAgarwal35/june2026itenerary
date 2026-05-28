@@ -283,15 +283,55 @@ export const himachal: Plan = {
     {
       index: 4,
       date: "2026-06-10",
-      title: "Optional Bir Billing day · or another resort day",
+      title: "Choose-your-own-day · McLeodganj & Dharamkot · or Bir · or resort",
       city: "Palampur",
       summary:
-        "Choose your own day. Adventurous half of the group can do Bir Billing (1 hr drive each way, paragliding tandem flight 25 min). Quieter half stays at the resort — book massages, swim, read. Re-converge for dinner.",
+        "Three groups, two cars, one resort dinner. The Tibetan-culture crowd takes one Innova to McLeodganj (1.5 hr) — Dalai Lama temple, then up to quiet Dharamkot for cafés and Bhagsu waterfall. The adventurous head to Bir Billing for paragliding (1 hr). Whoever wants to truly chill stays at the resort. Re-converge at sunset.",
       heroImage:
-        "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=1600&q=80",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Norbulingka_Institute.jpg?width=1600",
       attractions: [
         {
-          name: "Paragliding from Billing (optional)",
+          name: "Dharamkot (above McLeodganj)",
+          brief:
+            "The quieter, leafier village 3 km uphill from McLeodganj. Tushita Meditation Centre, café-lined trails, Israeli + Korean cuisine, and a base for the easy 30-min walk to Bhagsu Falls. The chillest version of Tibetan-Himachal.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Bhagsu_waterfall.jpg?width=1200",
+          duration: "Half day",
+          elderlyFriendly: true,
+          mapsQuery: "Dharamkot, Himachal Pradesh",
+        },
+        {
+          name: "Tsuglagkhang Complex (Dalai Lama Temple)",
+          brief:
+            "His Holiness's residence-in-exile since 1959 — main prayer hall has a 3-m gilded Shakyamuni Buddha; the adjacent Tibet Museum tells the diaspora story through photographs and artefacts. If His Holiness is teaching, you can attend for free (register online).",
+          photo:
+            "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
+          duration: "1.5 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Tsuglagkhang Complex, McLeod Ganj",
+        },
+        {
+          name: "Bhagsu Waterfall + Temple",
+          brief:
+            "A 16th-century Shiva temple with a freshwater pool, then a gentle 1 km uphill walk to a 30-ft seasonal waterfall — at peak flow in June. Cafés around the falls; sit, eat maggi, watch.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Bhagsu_waterfall.jpg?width=1200",
+          duration: "1.5 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Bhagsu Waterfall, McLeodganj",
+        },
+        {
+          name: "Norbulingka Institute, Sidhpur (en route)",
+          brief:
+            "30 km from the resort, on the way back from Dharamshala — a Tibetan handicraft preservation centre with thangka painting, statue-making, woodcarving workshops you can watch. Japanese-style gardens, a serene temple, an excellent café. Easy single-level walking.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Norbulingka_Institute.jpg?width=1200",
+          duration: "1.5 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Norbulingka Institute, Sidhpur",
+        },
+        {
+          name: "Paragliding from Billing (alt for the adventurous)",
           brief:
             "Bir is the world's #2 paragliding site. Drive to Billing (45 min), tandem flight 20-25 min with a certified pilot, landing back at Bir village. ₹3,000-3,500/pax, GoPro footage included. Walk-on take-off — skip if knees are not great.",
           photo:
@@ -300,29 +340,9 @@ export const himachal: Plan = {
           mapsQuery: "Billing Paragliding Take Off Site",
         },
         {
-          name: "Sherab Ling Monastery (en route)",
-          brief:
-            "If you're already on the Bir road, stop at Sherab Ling — seat of the 12th Tai Situpa, founded 1975. The 1999 film 'The Cup' was shot here. Gilded prayer hall, 14-ft Buddha. Calm, almost empty on weekdays.",
-          photo:
-            "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
-          duration: "45 min",
-          elderlyFriendly: true,
-          mapsQuery: "Palpung Sherabling Monastery",
-        },
-        {
-          name: "Andretta Pottery (alternative half-day)",
-          brief:
-            "Quieter half-day from the resort — 14 km / 30 min to Andretta. Mansimran Singh's pottery studio (Leach-Hamada lineage). Watch wheel throwing, buy seconds at half price. Norah Richards' adobe house & garden next door.",
-          photo:
-            "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
-          duration: "2 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Andretta Pottery and Crafts Society",
-        },
-        {
           name: "Stay at the resort (also a valid choice)",
           brief:
-            "If everyone's happy at Justa, just stay. The whole pitch of this revised plan is that you've earned the right to not 'do things'.",
+            "If everyone's happy at Justa, just stay. The whole pitch of this revised plan is that you've earned the right to not 'do things'. Spa appointments, infinity pool, lawn lunch.",
           photo:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1200",
           duration: "All day",
@@ -335,18 +355,48 @@ export const himachal: Plan = {
         pricePerNight: 10000,
         roomsNeeded: 5,
       },
-      meals: "Breakfast at resort · Lunch at Bir Café (or resort) · Dinner together at resort",
+      meals: "Breakfast at resort · Lunch at Norling House (McLeodganj) or Bir Café · Dinner together at resort",
     },
     {
       index: 5,
       date: "2026-06-11",
-      title: "Slow day · Baijnath temple at sunset",
+      title: "Slow day · easy half-day add-ons · Baijnath sunset",
       city: "Palampur",
       summary:
-        "Resort morning. Lazy lunch. Late afternoon: a short 25-min drive to the 13th-century Baijnath Shiva temple for the evening aarti — a quietly beautiful Nagara-style temple with two enormous deodars at the entrance. Back to the resort for dinner.",
+        "Resort morning. After lunch, pick one easy half-day: 12 km to the tucked-away Tashi Jong Tibetan monastery, 14 km to Andretta's pottery studios, or 18 km to the cliff-edge Chamunda Devi temple. Late afternoon: a short 25-min drive to the 13th-century Baijnath Shiva temple for evening aarti. Back to the resort for dinner.",
       heroImage:
         "https://commons.wikimedia.org/wiki/Special:FilePath/Kangra_Valley.jpg?width=1600",
       attractions: [
+        {
+          name: "Tashi Jong Monastery (12 km — easy add-on)",
+          brief:
+            "Tiny Tibetan refugee settlement and a small but exquisite Drukpa Kagyu monastery — colourful prayer hall, peaceful courtyard, almost zero tourists. 30 min there, 30 min visit, 30 min back.",
+          photo:
+            "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
+          duration: "1.5 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Tashi Jong Monastery, Taragarh",
+        },
+        {
+          name: "Andretta Pottery & Norah Richards' garden",
+          brief:
+            "Mansimran Singh's pottery studio (Leach-Hamada lineage) — watch wheel-throwing, buy beautiful seconds at half price. Norah Richards' adobe cottage next door — Irish actress who founded Punjabi theatre. 14 km from the resort.",
+          photo:
+            "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
+          duration: "1.5 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Andretta Pottery and Crafts Society",
+        },
+        {
+          name: "Chamunda Devi Temple",
+          brief:
+            "An ancient Shakti Peetha on the banks of the Baner river, 18 km from Palampur. Pretty stone temple shaded by deodars; the river burbles right under the floor. 45-min visit. Skip the long queues — go on a weekday afternoon.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Chamunda_Devi_Temple.jpg?width=1200",
+          duration: "1.5 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Chamunda Devi Temple, Himachal Pradesh",
+        },
         {
           name: "Baijnath Temple (aarti at 7pm)",
           brief:
@@ -369,7 +419,7 @@ export const himachal: Plan = {
         {
           name: "Pool & book afternoon",
           brief:
-            "The picked activity. Pool, lounger, book, lemonade. Sunset on the lawn. Repeat until dinner.",
+            "The picked activity if no day-trip appeals. Pool, lounger, book, lemonade. Sunset on the lawn. Repeat until dinner.",
           photo:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1200",
           duration: "All afternoon",
