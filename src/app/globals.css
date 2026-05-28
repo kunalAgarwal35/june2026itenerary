@@ -1,26 +1,117 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafaf7;
+  --foreground: #111110;
+  --muted: #6b6a64;
+  --card: #ffffff;
+  --border: #eae8e1;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-fraunces);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+/* Custom scrollbar — thin */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 999px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* Hide horizontal scrollbar on slide rails */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Snap scroll utilities */
+.snap-x-mandatory {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.snap-center { scroll-snap-align: center; }
+.snap-start { scroll-snap-align: start; }
+
+/* Tape-style accents for vacation feel */
+.tape {
+  position: absolute;
+  background: rgba(255, 215, 0, 0.45);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+/* Soft shimmer for hero images while loading */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #eee 0%, #f7f7f7 50%, #eee 100%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+
+/* Day card stamp font */
+.stamp {
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* gradient utilities */
+.bg-grain {
+  background-image: radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+/* Soft inner-shadow card */
+.card-soft {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.5) inset,
+    0 1px 2px rgba(20,20,18,0.04),
+    0 6px 24px -8px rgba(20,20,18,0.07);
+  border-radius: 1.25rem;
+}
+
+/* Postcard style */
+.postcard {
+  position: relative;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  isolation: isolate;
+}
+.postcard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.55) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Smooth pull-to-feel transitions */
+* { -webkit-tap-highlight-color: transparent; }
+
+/* Safe area padding */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .pb-safe { padding-bottom: max(env(safe-area-inset-bottom), 0.5rem); }
+  .pt-safe { padding-top: max(env(safe-area-inset-top), 0.5rem); }
 }

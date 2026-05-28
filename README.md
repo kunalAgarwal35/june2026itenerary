@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# June 2026 — Family Trip
 
-## Getting Started
+Side-by-side travel plans for two families (11 travellers, 4 parents, June 7-15 2026): **Sikkim & Darjeeling** vs **Kerala**. Real prices, day-by-day walkthrough, calendar view, embedded Google Maps routes, and a transparent budget breakdown.
 
-First, run the development server:
+Built mobile-first with Next.js 16 (App Router), Tailwind 4, framer-motion, and lucide-react. Deployed on Vercel.
+
+## Quick start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `/` — home with both destinations side by side
+- `/plan/sikkim` and `/plan/kerala` — day-by-day walkthrough
+- `/plan/[slug]/calendar` — monthly grid + vertical timeline
+- `/plan/[slug]/overview` — flights, cars, weather, budget
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Editing the plans
 
-## Learn More
+All trip content lives in `src/lib/plans/sikkim.ts` and `src/lib/plans/kerala.ts`. Edit prices, days, attractions, hotels — types in `src/lib/types.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+## Photo fix script
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`node scripts/fix-photos.mjs` — rewrites stale Wikipedia thumb URLs into `Special:FilePath` redirects.
