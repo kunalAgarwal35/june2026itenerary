@@ -27,5 +27,5 @@ export default async function PlanLayout({
 }
 
 export async function generateStaticParams() {
-  return [{ slug: "sikkim" }, { slug: "kerala" }];
+  return [{ slug: "sikkim" }, { slug: "kerala" }, { slug: "himachal" }];
 }

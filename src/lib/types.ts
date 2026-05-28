@@ -70,7 +70,7 @@ export type WeatherNote = {
 };
 
 export type Plan = {
-  slug: "sikkim" | "kerala";
+  slug: "sikkim" | "kerala" | "himachal";
   name: string;
   tagline: string;
   startDate: string;

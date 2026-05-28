@@ -20,7 +20,7 @@ export default function Home() {
           className="text-[2.5rem] sm:text-6xl leading-[0.95] tracking-tight font-medium mb-3"
           style={{ fontFamily: "var(--font-fraunces)" }}
         >
-          Two plans.
+          Three plans.
           <br />
           <span className="italic text-muted">One unforgettable</span> week.
         </h1>
@@ -31,7 +31,7 @@ export default function Home() {
 
       {/* Plans grid */}
       <main className="px-5 sm:px-8 max-w-5xl mx-auto w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {planList.map((plan, i) => (
             <PlanCard key={plan.slug} plan={plan} index={i} />
           ))}
@@ -45,23 +45,26 @@ export default function Home() {
           >
             Quick compare
           </h3>
-          <div className="grid grid-cols-3 gap-3 text-sm">
+          <div className="grid grid-cols-4 gap-2 sm:gap-3 text-xs sm:text-sm">
             <div className="col-span-1" />
             {planList.map((p) => (
               <div key={p.slug} className="col-span-1">
-                <div className="flex items-center gap-1.5 font-medium text-foreground">
+                <div className="flex items-center gap-1 font-medium text-foreground">
                   <span>{p.emoji}</span>
-                  <span className="truncate">{p.slug === "sikkim" ? "Sikkim" : "Kerala"}</span>
+                  <span className="truncate text-[11px] sm:text-sm">
+                    {labelFor(p.slug)}
+                  </span>
                 </div>
               </div>
             ))}
 
-            <Row label="Climate (June 7-15)" values={["Pre-monsoon", "Monsoon onset"]} />
-            <Row label="Daytime temp" values={["18-24°C", "22-30°C"]} />
-            <Row label="Self-drive viable?" values={["Mostly no", "Yes"]} />
-            <Row label="Wow factor" values={["Kanchenjunga", "Backwaters"]} />
-            <Row label="Best for elders" values={["⭐⭐⭐", "⭐⭐⭐⭐"]} />
-            <Row label="Budget range" values={["₹9.2-12.2L", "₹5.8-8.5L"]} />
+            <Row label="Climate (Jun 7-15)" values={["Monsoon onset", "Pre-monsoon clear", "Pre-monsoon"]} />
+            <Row label="Daytime temp" values={["22-30°C", "18-26°C", "18-24°C"]} />
+            <Row label="Self-drive?" values={["Yes ✓", "Yes ✓", "Mostly no"]} />
+            <Row label="Longest drive" values={["4 hr", "5 hr (once)", "7 hr+"]} />
+            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐"]} />
+            <Row label="Wow factor" values={["Houseboat", "Bir paragliding", "Kanchenjunga"]} />
+            <Row label="Budget" values={["₹5.3-7.6L", "₹6.2-8.2L", "₹9.2-12.2L"]} />
           </div>
         </section>
 
@@ -83,17 +86,30 @@ export default function Home() {
 function Row({ label, values }: { label: string; values: string[] }) {
   return (
     <>
-      <div className="col-span-1 text-muted text-xs sm:text-sm py-1.5 border-t border-border">
+      <div className="col-span-1 text-muted text-[11px] sm:text-sm py-1.5 border-t border-border">
         {label}
       </div>
       {values.map((v, i) => (
         <div
           key={i}
-          className="col-span-1 text-xs sm:text-sm py-1.5 border-t border-border font-medium"
+          className="col-span-1 text-[11px] sm:text-sm py-1.5 border-t border-border font-medium"
         >
           {v}
         </div>
       ))}
     </>
   );
+}
+
+function labelFor(slug: string) {
+  switch (slug) {
+    case "sikkim":
+      return "Sikkim";
+    case "kerala":
+      return "Kerala";
+    case "himachal":
+      return "Himachal";
+    default:
+      return slug;
+  }
 }
