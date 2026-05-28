@@ -48,13 +48,15 @@ export function PlanOverview({ plan }: { plan: Plan }) {
             ? "Drive — Jaipur ↔ Palampur"
             : plan.slug === "rishikesh"
             ? "Drive — Jaipur ↔ Rishikesh ↔ Mussoorie"
+            : plan.slug === "kinnaur"
+            ? "Drive — Jaipur ↔ Kinnaur (Sarahan · Sangla · Kalpa)"
             : "Flights"
         }
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <FlightCard
             title={
-              plan.slug === "himachal" || plan.slug === "rishikesh"
+              plan.slug === "himachal" || plan.slug === "rishikesh" || plan.slug === "kinnaur"
                 ? "Outbound legs"
                 : `Outbound · ${shortDate(plan.startDate)}`
             }
@@ -62,7 +64,7 @@ export function PlanOverview({ plan }: { plan: Plan }) {
           />
           <FlightCard
             title={
-              plan.slug === "himachal" || plan.slug === "rishikesh"
+              plan.slug === "himachal" || plan.slug === "rishikesh" || plan.slug === "kinnaur"
                 ? "Return legs"
                 : `Return · ${shortDate(plan.endDate)}`
             }

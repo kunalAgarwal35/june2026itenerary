@@ -60,12 +60,12 @@ export default function Home() {
 
             <Row label="Length" values={["9 days", "7 days", "7 days"]} />
             <Row label="Travel" values={["Fly + drive", "Drive from JAI", "Drive from JAI"]} />
-            <Row label="Bases" values={["6 stops", "1 resort (4N)", "2 cities (3N + 3N)"]} />
-            <Row label="Climate" values={["Monsoon onset", "Pre-monsoon", "Pre-monsoon"]} />
-            <Row label="Longest drive" values={["4 hr", "8.5 hr highway", "10.5 hr highway"]} />
-            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐"]} />
-            <Row label="Vibe" values={["Houseboat + beach", "Tea estate spa", "Ghats + hill station"]} />
-            <Row label="Budget" values={["₹5.3-7.6L", "₹5.0-6.1L", "₹4.7-6.0L"]} />
+            <Row label="Bases" values={["6 stops", "1 resort (4N)", "Sarahan · Sangla · Kalpa"]} />
+            <Row label="Highest point" values={["~Munnar 5,800ft", "Palampur ~4,300ft", "Chitkul 11,300ft"]} />
+            <Row label="Longest drive" values={["4 hr", "8.5 hr highway", "10 hr (Day 6)"]} />
+            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐"]} />
+            <Row label="Vibe" values={["Houseboat + beach", "Tea estate spa", "Apple country + Tibet edge"]} />
+            <Row label="Budget" values={["₹5.3-7.6L", "₹5.0-6.1L", "₹4.2-5.5L"]} />
           </div>
         </section>
 
@@ -109,7 +109,11 @@ function labelFor(slug: string) {
     case "kerala":
       return "Kerala";
     case "himachal":
-      return "Himachal";
+      return "Palampur";
+    case "rishikesh":
+      return "Rishikesh";
+    case "kinnaur":
+      return "Kinnaur";
     default:
       return slug;
   }

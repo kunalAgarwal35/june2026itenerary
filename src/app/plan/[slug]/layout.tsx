@@ -32,5 +32,6 @@ export async function generateStaticParams() {
     { slug: "kerala" },
     { slug: "himachal" },
     { slug: "rishikesh" },
+    { slug: "kinnaur" },
   ];
 }
