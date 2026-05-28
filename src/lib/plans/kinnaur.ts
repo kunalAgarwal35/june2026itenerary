@@ -64,25 +64,25 @@ export const kinnaur: Plan = {
     ],
     return: [
       {
-        airline: "Return leg 1 — Sangla → Narkanda",
-        flightNo: "Day 7 · ~200 km",
+        airline: "Return leg 1 — Sangla → Shimla",
+        flightNo: "Day 7 · ~250 km",
         from: "Sangla",
-        to: "Narkanda (HPTDC Hotel Hatu)",
-        depart: "08:00",
-        arrive: "15:00",
-        duration: "7h on the road",
-        stops: "Karcham · Rampur lunch",
+        to: "Shimla (Clarkes Hotel, Mall Road)",
+        depart: "07:30",
+        arrive: "15:30",
+        duration: "8h on the road",
+        stops: "Karcham · Rampur lunch · Narkanda tea",
         pricePerPerson: 0,
       },
       {
-        airline: "Return leg 2 — Narkanda → Chandigarh",
-        flightNo: "Day 8 · ~170 km",
-        from: "Narkanda",
+        airline: "Return leg 2 — Shimla → Chandigarh",
+        flightNo: "Day 8 · ~110 km",
+        from: "Shimla",
         to: "Chandigarh",
-        depart: "09:30",
+        depart: "10:30",
         arrive: "14:30",
-        duration: "5h on the road",
-        stops: "Shimla coffee break",
+        duration: "4h on the road",
+        stops: "Solan toll · lunch in Chandigarh",
         pricePerPerson: 0,
       },
       {
@@ -163,7 +163,7 @@ export const kinnaur: Plan = {
     },
   ],
 
-  totalEstimate: { low: 535000, high: 690000 },
+  totalEstimate: { low: 555000, high: 710000 },
 
   costBreakdown: [
     { label: "Fuel (~3,200 km × 2 cars × ₹12/km hill rates)", amount: 76800, note: "Long hilly stretches gulp more than highway" },
@@ -172,7 +172,7 @@ export const kinnaur: Plan = {
     { label: "Hotel — Mashobra (Days 2-3, 5 rooms × 2N)", amount: 110000, note: "Marigold Mashobra Sarovar Premiere @ ~₹11,000/room" },
     { label: "Hotel — Kalpa (Days 4-5, 5 rooms × 2N)", amount: 65000, note: "The Apple Pie Hotel @ ~₹6,500/room" },
     { label: "Hotel — Sangla (Day 6, 5 rooms × 1N)", amount: 40000, note: "Banjara Camps & Retreat @ ~₹8,000/room" },
-    { label: "Hotel — Narkanda (Day 7, 5 rooms × 1N)", amount: 25000, note: "HPTDC Hotel Hatu @ ~₹5,000/room" },
+    { label: "Hotel — Shimla (Day 7, 5 rooms × 1N)", amount: 42500, note: "Clarkes Hotel (heritage 1898, Mall Road) @ ~₹8,500/room" },
     { label: "Meals (₹500/pax × 11 × 22)", amount: 121000, note: "Breakfast included at most hotels — 22 lunches/dinners" },
     { label: "Activities (Sangla nature walk, Chitkul, Kalpa orchards)", amount: 12000 },
     { label: "Misc — Diamox/oxygen, tips, travel insurance, buffer", amount: 35000 },
@@ -546,18 +546,18 @@ export const kinnaur: Plan = {
     {
       index: 7,
       date: "2026-06-13",
-      title: "Sangla → Narkanda (return leg 1, 7h)",
-      city: "Narkanda",
+      title: "Sangla → Shimla (return leg 1, 8h)",
+      city: "Shimla",
       summary:
-        "Start the descent. 7 hours down the Baspa valley, back along the Sutlej via Rampur, climbing again to Narkanda — apple country at 2,700 m. The HPTDC's basic but clean rooms. Easy evening, early sleep.",
+        "Start the descent. 8 hours down the Baspa valley, back along the Sutlej via Rampur, then climbing past Narkanda (tea stop) and on to Shimla — the colonial 'Queen of the Hills', 2,200 m. Check into Clarkes Hotel on Mall Road by 3:30pm. Easy evening: Mall Road wander, sundowner at the bandstand.",
       heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Sutlej_River.jpg?width=1600",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Shimla.jpg?width=1600",
       transfer: {
         from: "Sangla",
-        to: "Narkanda (HPTDC Hotel Hatu)",
-        distanceKm: 200,
-        durationHours: 7,
-        notes: "08:00 start. Daylight only. Same NH-5 as Day 4 but shorter — splitting the long return prevents fatigue. Altitude dips through Rampur (1,000 m) and climbs back to 2,700 m.",
+        to: "Shimla (Clarkes Hotel, Mall Road)",
+        distanceKm: 250,
+        durationHours: 8,
+        notes: "07:30 start. Daylight only. Same NH-5 as Day 4 but mirrored. Lunch at Rampur. Altitude dips through Rampur (1,000 m) and climbs back to Shimla (2,200 m). Two drivers per car.",
       },
       attractions: [
         {
@@ -573,7 +573,7 @@ export const kinnaur: Plan = {
         {
           name: "Rampur lunch break",
           brief:
-            "Halai's Café — same hot paranthas, fresh dahi. Restroom + last fuel until Narkanda.",
+            "Halai's Café — hot paranthas, fresh dahi. Restroom + last hill fuel station before Shimla.",
           photo:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Sutlej_River.jpg?width=1200",
           duration: "1 hr",
@@ -581,56 +581,86 @@ export const kinnaur: Plan = {
           mapsQuery: "Rampur Bushahr",
         },
         {
-          name: "Narkanda apple country (sunset)",
+          name: "Narkanda tea (en route)",
           brief:
-            "Settle in early at Narkanda. The hotel sits among working apple orchards at 2,700 m — sunset across the Hatu Peak ridge is spectacular when skies are clear.",
+            "Quick tea-and-stretch stop at Café Hatu, Narkanda — apple orchards on every side, Hatu Peak visible if skies are clear.",
           photo:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Kinnaur.jpg?width=1200",
-          duration: "1 hr",
+          duration: "30 min",
           elderlyFriendly: true,
-          mapsQuery: "Narkanda, Himachal Pradesh",
+          mapsQuery: "Café Hatu, Narkanda",
         },
-      ],
-      hotel: {
-        name: "HPTDC Hotel Hatu, Narkanda",
-        category: "3★ HP Tourism · Altitude 2,700 m",
-        pricePerNight: 5000,
-        roomsNeeded: 5,
-        notes: "Government-run, simple but spotless rooms with valley-view balconies. Book on hptdc.in. Backup: The Hatu Resort Narkanda (privately run, similar rates).",
-      },
-      meals: "Breakfast at Banjara · Lunch at Rampur · Dinner at HPTDC",
-    },
-    {
-      index: 8,
-      date: "2026-06-14",
-      title: "Narkanda → Shimla → Chandigarh (return leg 2, 5h)",
-      city: "Chandigarh",
-      summary:
-        "Easy day. Sleep in, late breakfast, leave 09:30. 5-hour descent: Narkanda → Shimla (coffee break with a Mall Road walk) → Chandigarh by mid-afternoon. Hot showers, leisurely dinner.",
-      heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Shimla.jpg?width=1600",
-      transfer: {
-        from: "Narkanda",
-        to: "Chandigarh",
-        distanceKm: 170,
-        durationHours: 5,
-        notes: "All downhill now — well-paved 4-lane from Shimla to Chandigarh. Lunch en route or at Chandigarh.",
-      },
-      attractions: [
         {
-          name: "Shimla coffee break — The Mall",
+          name: "Shimla Mall Road & The Ridge",
           brief:
-            "Park at Lift Road, take the lift to Mall Road. 30-45 min wander past Scandal Point, the Christ Church (1857), Gaiety Theatre. Indian Coffee House (since 1956) for a proper South Indian filter coffee.",
+            "Once you've checked in, walk out of Clarkes onto Mall Road — pedestrians only after 6pm. The Ridge has the 1857 Christ Church and the Gaiety Theatre. Easy flat 1 km loop. Bookshops, candy shops, Tudor-bethan facades.",
           photo:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Shimla.jpg?width=1200",
           duration: "1.5 hr",
           elderlyFriendly: true,
-          mapsQuery: "The Mall Shimla",
+          mapsQuery: "The Ridge, Shimla",
+        },
+        {
+          name: "Indian Coffee House (since 1956)",
+          brief:
+            "An institution on Mall Road — turbaned waiters, vintage prices, proper South Indian filter coffee. The most affordable atmospheric meal in Shimla.",
+          photo:
+            "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
+          duration: "45 min",
+          elderlyFriendly: true,
+          mapsQuery: "Indian Coffee House, Shimla",
+        },
+      ],
+      hotel: {
+        name: "Clarkes Hotel, Shimla",
+        category: "Heritage 4★ on Mall Road · Altitude 2,200 m",
+        pricePerNight: 8500,
+        roomsNeeded: 5,
+        notes: "Founded 1898 by Earnest Clarke — Shimla's oldest hotel. Wood-panelled rooms, valley-view balconies, lift access. Right on the Mall (auto-rickshaws drop at Cart Road, porters carry bags up). Book direct or via clarkeshotel.in. Premium alt: The Oberoi Cecil (~₹20K/room).",
+      },
+      meals: "Breakfast at Banjara · Lunch at Rampur · Dinner at Clarkes (or Cecil's Restaurant)",
+    },
+    {
+      index: 8,
+      date: "2026-06-14",
+      title: "Shimla → Chandigarh (return leg 2, 4h)",
+      city: "Chandigarh",
+      summary:
+        "Easiest day of the trip. Sleep in. Slow Mall Road breakfast at Wake & Bake (or Café Sol). Leave Shimla by 10:30. 4-hour smooth descent down the Chandigarh-Shimla highway — all 4-lane after the first 30 km. Arrive Chandigarh by 14:30. Hot showers, an early dinner, last night in city comfort.",
+      heroImage:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Shimla.jpg?width=1600",
+      transfer: {
+        from: "Shimla",
+        to: "Chandigarh",
+        distanceKm: 110,
+        durationHours: 4,
+        notes: "Smooth, descending all the way. Solan toll plaza at the halfway mark. No driving challenges — relax.",
+      },
+      attractions: [
+        {
+          name: "Wake & Bake (Shimla breakfast)",
+          brief:
+            "On Mall Road — sourdough, fresh-pressed coffee, fluffy eggs benedict. Sit by the window with the deodars in view. Open from 08:30.",
+          photo:
+            "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
+          duration: "1 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Wake and Bake Café, Shimla",
+        },
+        {
+          name: "Viceregal Lodge (optional, 30 min)",
+          brief:
+            "Built 1888 as the British Viceroy's summer residence — pure Scottish Baronial in the middle of HP. The grounds are open daily; the interiors run 45-min guided tours (₹100). Skip if pressed for time.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Shimla.jpg?width=1200",
+          duration: "1 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Indian Institute of Advanced Study, Shimla",
         },
         {
           name: "Sukhna Lake evening (Chandigarh)",
           brief:
-            "Once you're back at the hotel — same Sukhna Lake from Day 1, this time at sunset. The 3 km loop feels more familiar now.",
+            "Once you're back at the JW — same Sukhna Lake from Day 1, this time at sunset. The 3 km loop feels familiar now.",
           photo:
             "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
           duration: "1 hr",
@@ -645,7 +675,7 @@ export const kinnaur: Plan = {
         roomsNeeded: 5,
         notes: "Same hotel as Day 1. Order an early dinner — tomorrow's the highway run home.",
       },
-      meals: "Breakfast at HPTDC · Coffee at Indian Coffee House (Shimla) · Lunch & dinner at JW",
+      meals: "Breakfast at Wake & Bake (Shimla) · Lunch at Chandigarh · Dinner at JW",
     },
     {
       index: 9,
