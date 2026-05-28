@@ -2,66 +2,66 @@ import type { Plan } from "../types";
 
 export const himachal: Plan = {
   slug: "himachal",
-  name: "Off-beat Himachal",
-  tagline: "Parvati Valley · Bir Billing · Dalhousie · Chamba",
+  name: "Slow Himachal · Palampur tea estate",
+  tagline: "Drive from Jaipur. One resort. Tea, deodars, no rush.",
   startDate: "2026-06-07",
-  endDate: "2026-06-15",
+  endDate: "2026-06-13",
   travellers: 11,
-  emoji: "🏕️",
-  accentFrom: "#0c4a6e",
-  accentTo: "#7dd3fc",
+  emoji: "🍃",
+  accentFrom: "#2d5a2d",
+  accentTo: "#a4c97b",
   heroImage:
-    "https://commons.wikimedia.org/wiki/Special:FilePath/Parvati_Valley.jpg?width=1600",
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1600",
   description:
-    "A slow, mostly-low-altitude loop through the off-beat side of Himachal — riverside cafés at Kasol & Chalal, paragliding at Bir Billing, the Dalai Lama's monastery at McLeodganj, the 'Mini Switzerland' meadow at Khajjiar, and the ancient temple town of Chamba. Single long drive day (Day 3); the rest are 2-4 hours.",
+    "The chill version. Drive from Jaipur with one overnight at Chandigarh on the way up, then settle in for 4 unhurried nights at a tea-estate resort in Palampur (1,300 m, pine-deodar belt, Dhauladhar views). Days are for spa, walks in the tea gardens, easy lunches, and one optional Bir Billing paragliding day. No daily transfers, no flights, no rush.",
 
   flights: {
     outbound: [
       {
-        airline: "IndiGo",
-        flightNo: "6E 2042 + 6E 7401",
-        from: "JAI (Jaipur)",
-        to: "KUU (Bhuntar / Kullu)",
+        airline: "Self-drive from Jaipur",
+        flightNo: "Day 1 · ~520 km",
+        from: "Jaipur (home)",
+        to: "Chandigarh (overnight)",
         depart: "06:00",
-        arrive: "12:35",
-        duration: "6h 35m",
-        stops: "1 stop (DEL)",
-        pricePerPerson: 10840,
+        arrive: "14:30",
+        duration: "8h 30m on the road",
+        stops: "Lunch at Murthal (Sukhdev Dhaba)",
+        pricePerPerson: 0,
       },
       {
-        airline: "Air India + Alliance Air",
-        flightNo: "AI 492 + 9I 681",
-        from: "JAI (Jaipur)",
-        to: "KUU (Bhuntar / Kullu)",
-        depart: "07:45",
-        arrive: "14:55",
-        duration: "7h 10m",
-        stops: "1 stop (DEL)",
-        pricePerPerson: 11680,
+        airline: "Self-drive Chandigarh → Palampur",
+        flightNo: "Day 2 · ~280 km",
+        from: "Chandigarh",
+        to: "Palampur (resort)",
+        depart: "08:30",
+        arrive: "14:30",
+        duration: "6h on the road",
+        stops: "Tea break at Una / Hamirpur",
+        pricePerPerson: 0,
       },
     ],
     return: [
       {
-        airline: "IndiGo",
-        flightNo: "6E 7104 + 6E 2179",
-        from: "DHM (Dharamshala / Gaggal)",
-        to: "JAI (Jaipur)",
-        depart: "12:25",
-        arrive: "18:15",
-        duration: "5h 50m",
-        stops: "1 stop (DEL)",
-        pricePerPerson: 9420,
+        airline: "Self-drive Palampur → Chandigarh",
+        flightNo: "Day 6 · ~280 km",
+        from: "Palampur",
+        to: "Chandigarh (overnight)",
+        depart: "09:00",
+        arrive: "15:00",
+        duration: "6h on the road",
+        stops: "Lunch at Bilaspur",
+        pricePerPerson: 0,
       },
       {
-        airline: "Air India",
-        flightNo: "AI 9802 + AI 491",
-        from: "DHM (Dharamshala / Gaggal)",
-        to: "JAI (Jaipur)",
-        depart: "14:30",
-        arrive: "20:40",
-        duration: "6h 10m",
-        stops: "1 stop (DEL)",
-        pricePerPerson: 9760,
+        airline: "Self-drive Chandigarh → Jaipur",
+        flightNo: "Day 7 · ~520 km",
+        from: "Chandigarh",
+        to: "Jaipur (home)",
+        depart: "07:00",
+        arrive: "15:30",
+        duration: "8h 30m on the road",
+        stops: "Lunch at Karnal Haveli",
+        pricePerPerson: 0,
       },
     ],
   },
@@ -69,278 +69,184 @@ export const himachal: Plan = {
   carOptions: [
     {
       type: "self-drive",
-      vehicle: "2× Toyota Innova Crysta 7-seater",
+      vehicle: "2× Toyota Innova Crysta (own or Jaipur rental)",
       capacity: 7,
-      perDayPrice: 4500,
-      totalDays: 9,
+      perDayPrice: 0,
+      totalDays: 7,
       countNeeded: 2,
-      vendor: "Zoomcar Chandigarh delivery / Self Drive Himachal",
+      vendor: "Own family vehicles · or Zoomcar Jaipur weekly rate",
       notes:
-        "Picked. ₹4,500/day per car all-in (hill-spec rental — slightly higher than plains rates). One-way pick-up Kullu / drop Dharamshala adds ~₹4,000 one-time. All routes here are paved & well-signposted; only the Kasol-Bir leg (Day 3) needs concentration.",
+        "Picked. Driving from Jaipur means no airport transfers, no rental fuss at the destination, and the cars wait at your hotel. NH-48 (Jaipur–Delhi–Karnal) and NH-152 (Karnal–Chandigarh) are excellent 6-lane highways. The mountain stretch is only 6 hours, on a paved state highway. Two drivers per car helps — alternate every 2 hours.",
     },
     {
       type: "self-drive",
-      vehicle: "1× Force Urbania 12-seater",
-      capacity: 12,
-      perDayPrice: 7800,
-      totalDays: 9,
-      countNeeded: 1,
-      vendor: "MyChoize Chandigarh (must be picked at Chandigarh then driven up)",
+      vehicle: "If renting in Jaipur: 2× Innova Crysta, 7-day package",
+      capacity: 7,
+      perDayPrice: 4000,
+      totalDays: 7,
+      countNeeded: 2,
+      vendor: "Zoomcar Jaipur / Avis Jaipur — Sawai Madhopur Rd",
       notes:
-        "Single-vehicle convenience but the 12-seater is hard on Kasol's narrow approach road & Chamba's lanes. Pick up at Chandigarh adds 6h drive to Kasol on Day 1 — skip unless you're driving from Delhi instead of flying.",
+        "~₹4,000/day all-in, free km 200/day (we'd use ~250/day on average — extra km ₹12 each). Pick up the morning of Day 1, drop on Day 7 evening. Insurance upgrade ₹500/day/car worth it for hill section.",
     },
     {
       type: "chauffeur",
-      vehicle: "2× Innova Crysta with hill-trained drivers",
+      vehicle: "Backup: 2× Innova Crysta with drivers",
       capacity: 7,
-      perDayPrice: 5800,
-      totalDays: 9,
+      perDayPrice: 5000,
+      totalDays: 7,
       countNeeded: 2,
-      vendor: "Himachal Holidays / TaxiGo Chandigarh",
+      vendor: "Jaipur outstation operators (Savaari / MakeMyTrip)",
       notes:
-        "Fallback if you'd rather not drive in hills. ~₹23,000 more total than self-drive. Driver knows every blind hairpin between Mandi and Bir.",
+        "If no one's keen on the 8-hour Jaipur–Chandigarh stretch, chauffeur option adds ~₹14,000 total. Driver night-halt allowance included.",
     },
   ],
 
   weather: [
     {
-      heading: "Best window of the year",
-      body: "Mid-May to mid-June is THE sweet spot for Himachal — clear skies, alpine flowers in bloom, no monsoon yet. Daytime 22-28°C in the valleys, 14-22°C in Dalhousie/Khajjiar at altitude. Pack a fleece for mornings.",
+      heading: "Best window of the year for HP",
+      body: "June 7-13 sits in the perfect pre-monsoon sweet spot. Palampur (1,300 m) days will be 22-26°C, nights 14-18°C — sleep with a quilt. Skies are mostly clear; Dhauladhar peaks visible most mornings.",
       tone: "good",
     },
     {
-      heading: "Monsoon arrives late June",
-      body: "South-West monsoon hits Himachal around June 25 — you finish on June 15, so you're in the clear. Random pre-monsoon thunderstorms possible after June 10, mostly evenings. Carry a light rain shell.",
+      heading: "Pre-monsoon thunderstorms possible",
+      body: "Random afternoon showers can pop up after June 10. The full monsoon doesn't hit Himachal until late June, so we're in the clear — but carry a light rain shell just in case.",
       tone: "info",
     },
     {
-      heading: "Driving conditions",
-      body: "Highways are good. The Kasol → Bir leg (Day 3) is the toughest — 5 hours via Mandi with construction stretches near Mandi town. Bir → Dalhousie via Pathankot is fast (4-lane down to Pathankot then climb).",
-      tone: "info",
+      heading: "Highway is smooth",
+      body: "Jaipur to Chandigarh is excellent 6-lane highway (NH-48 → NH-152) — a single 8-hour day with toilet stops. Chandigarh to Palampur is 6 hours of state highway with gentle climbs. No off-roading, no Sikkim-style hairpins.",
+      tone: "good",
     },
     {
-      heading: "Altitude is mild",
-      body: "Nothing exceeds 2,400 m on this trip — easier on the parents than Sikkim. Dalhousie (2,036 m) and Khajjiar (1,920 m) are the highest stays. Paragliding launch at Billing is 2,400 m but you're up there for 20 min.",
+      heading: "Altitude is gentle",
+      body: "Resort is at 1,300 m — easy on hearts and lungs. Bir paragliding launch is 2,400 m but you only spend 20 minutes up there. Nothing in the day-trip radius exceeds 2,000 m.",
       tone: "good",
     },
   ],
 
-  totalEstimate: { low: 615000, high: 820000 },
+  totalEstimate: { low: 495000, high: 610000 },
 
   costBreakdown: [
-    { label: "Flights (JAI→KUU + DHM→JAI, open-jaw)", amount: 223300, note: "IndiGo 1-stop via Delhi — ~₹20,300 × 11" },
-    { label: "Hotels (Kasol 2N · Bir 2N · McLeodganj 2N · Dalhousie 2N)", amount: 235000, note: "5 rooms/night avg @ ~₹6,000-8,000" },
-    { label: "Self-drive: 2× Innova Crysta × 9 days", amount: 81000, note: "₹4,500/day × 2 × 9 — hill-spec premium" },
-    { label: "One-way drop fee + fuel (~1,200km × 2 cars)", amount: 36000, note: "Drop at Dharamshala adds ₹4,000; fuel @ ₹14/km hills" },
-    { label: "Meals (₹500/pax/day × 11 × 16 meals)", amount: 88000 },
-    { label: "Paragliding at Bir (assume 6 keen, ₹3,500 each)", amount: 21000, note: "Tandem 20-25 min, includes GoPro footage" },
-    { label: "Monastery / museum entries / Manikaran langar donation", amount: 12000 },
-    { label: "Tolls, parking, tips, travel insurance", amount: 22000 },
+    { label: "Fuel (Jaipur ↔ Palampur ~2,200 km × 2 cars × ₹11/km)", amount: 48400, note: "Includes detours around resort area" },
+    { label: "Tolls (NH-48 & NH-152, both ways × 2 cars)", amount: 28000, note: "FASTag — Murthal, Karnal, Ambala, Chandigarh barriers" },
+    { label: "Hotel — Chandigarh (1N each way × 5 rooms)", amount: 70000, note: "JW Marriott or Hyatt Regency, ~₹7,000/room" },
+    { label: "Hotel — Palampur resort (4N × 5 rooms)", amount: 200000, note: "Justa Birding Tea Suite, ~₹10,000/room" },
+    { label: "Meals (₹500/pax × 11 × 18 meals)", amount: 99000, note: "Breakfast usually included at hotels" },
+    { label: "Paragliding at Bir (assume 5 keen, ₹3,500 each)", amount: 17500, note: "Tandem 25 min — totally optional" },
+    { label: "Spa, tea-tasting, in-resort experiences", amount: 18000 },
+    { label: "Misc — driver coffee, tips, travel insurance", amount: 15000 },
+    { label: "Car rental (only if not using own cars)", amount: 56000, note: "Optional — ₹4,000/day × 2 × 7" },
   ],
 
   days: [
     {
       index: 1,
       date: "2026-06-07",
-      title: "Jaipur → Bhuntar → Kasol",
-      city: "Kasol",
+      title: "Jaipur → Chandigarh",
+      city: "Chandigarh",
       summary:
-        "Morning flight from Jaipur, connect at Delhi, land at Bhuntar (KUU) by lunchtime. Pick up the 2× Innova Crystas at the airport, easy 1.5-hour drive up the Parvati Valley to Kasol — Himachal's hippie-meets-fishing village. Settle in, riverside dinner.",
+        "Early start from Jaipur (06:00). Smooth 8-hour drive up NH-48 → NH-152 with a parantha lunch at Sukhdev Dhaba (Murthal). Check in to the hotel by 3pm. Easy evening: Sukhna Lake walk or Sector 17 stroll.",
       heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Parvati_Valley.jpg?width=1600",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1600&q=80",
       transfer: {
-        from: "Bhuntar Airport (KUU)",
-        to: "Kasol",
-        distanceKm: 30,
-        durationHours: 1.5,
-        notes: "Smooth state highway along the Beas, then turn east into the Parvati Valley. The road narrows but is paved. Drive in daylight — no point arriving after sunset.",
+        from: "Jaipur (home)",
+        to: "Chandigarh",
+        distanceKm: 520,
+        durationHours: 8.5,
+        notes: "Best Indian highway in the country. Stops: Murthal (lunch), Karnal (fuel), Ambala (toilet). Aim to leave Jaipur before 6am to avoid Delhi-NCR traffic.",
       },
       attractions: [
         {
-          name: "Parvati riverside walk",
+          name: "Sukhdev Dhaba, Murthal",
           brief:
-            "Wooden bridges, deodar pines, and chai shacks on boulders right above the rapids. Kasol's main lane runs parallel to the river — flat and easy for parents.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Kasol.jpg?width=1200",
-          duration: "1 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Kasol, Himachal Pradesh",
-        },
-        {
-          name: "Israeli-Himachali café crawl",
-          brief:
-            "Kasol has the best falafel + chai combo in the country. Try Evergreen Café (1990s OG), The Moon Dance Café, or Bhoj Café for trout overlooking the river.",
+            "The Punjabi highway dhaba landmark since 1957. Stuffed paranthas with ghee, lassi, fresh dahi. Open 24×7. Halfway between Jaipur and Chandigarh — natural lunch stop.",
           photo:
             "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
-          duration: "1.5 hr",
+          duration: "1 hr",
           elderlyFriendly: true,
-          mapsQuery: "Evergreen Café, Kasol",
+          mapsQuery: "Sukhdev Dhaba, Murthal",
+        },
+        {
+          name: "Sukhna Lake walk",
+          brief:
+            "Man-made reservoir at the foot of the Shivaliks (1958, Corbusier's design). 3 km level promenade — perfect post-drive leg-stretch for the parents. Boating available.",
+          photo:
+            "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
+          duration: "1 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Sukhna Lake, Chandigarh",
         },
       ],
       hotel: {
-        name: "Sumi Yashshree Suites & Spa",
-        category: "4★ riverside",
-        pricePerNight: 8200,
+        name: "JW Marriott Chandigarh",
+        category: "5★ city",
+        pricePerNight: 7500,
         roomsNeeded: 5,
-        notes: "Wood-beam suites with river-view balconies, in-house spa, lift access. The bone-quiet end of Kasol — you'll hear the river not the speaker.",
+        notes: "City-centre, Sector 35. Big rooms, lift to underground parking — secure spot for both Innovas. Reliable buffet dinner.",
       },
-      meals: "Breakfast in flight · Lunch on the road · Dinner riverside",
+      meals: "Breakfast on the road · Lunch at Sukhdev's · Dinner at hotel buffet",
     },
     {
       index: 2,
       date: "2026-06-08",
-      title: "Chalal walk · Manikaran hot springs",
-      city: "Kasol",
+      title: "Chandigarh → Palampur tea estate",
+      city: "Palampur",
       summary:
-        "A relaxed full day in the Parvati Valley. Morning: easy 1.5 km walk to Chalal village (the more 'authentic' hippie hamlet upstream). Afternoon: 40-min drive to Manikaran — Sikh gurudwara built over a natural hot spring, free langar lunch.",
+        "Leave 08:30 after a proper breakfast. 6-hour climb through Una and Hamirpur — leaving the plains behind, hills slowly opening up. Arrive Palampur ~2:30pm. The resort is the destination — check in, lazy late lunch on the lawn, watch the clouds move on the Dhauladhar.",
       heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Manikaran.jpg?width=1600",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1600",
+      transfer: {
+        from: "Chandigarh",
+        to: "Palampur",
+        distanceKm: 280,
+        durationHours: 6,
+        notes: "Paved state highway. Tea break at Una or Hamirpur. The last 30 min into Palampur is the only real climbing — gentle hairpins, not scary.",
+      },
       attractions: [
         {
-          name: "Chalal village walk",
+          name: "Tea-estate welcome",
           brief:
-            "Cross the Parvati on a wooden bridge from Kasol and follow the gentle riverside path 1.5 km upstream. Stone houses, drying yarn, prayer flags, a couple of cafés. Takes 30-40 min one-way; mostly flat.",
+            "Justa Birding is set inside a working Kangra tea garden. On arrival they typically serve a Kangra black tea on the lawn — the local first-flush has a distinctive light citrus aroma.",
           photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Parvati_Valley.jpg?width=1200",
-          duration: "2 hr round-trip",
-          elderlyFriendly: true,
-          mapsQuery: "Chalal Village, Kasol",
-        },
-        {
-          name: "Manikaran Gurudwara & Hot Springs",
-          brief:
-            "A Sikh gurudwara built directly on top of natural sulphur hot springs — rice for the langar is cooked using the steam. Free community lunch served all day. Cover your head before entering.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Manikaran.jpg?width=1200",
-          duration: "1.5 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Sri Guru Nanak Ji Gurudwara, Manikaran",
-        },
-        {
-          name: "Manikaran Shiva Temple",
-          brief:
-            "The other half of the same complex — an old wooden Shiva temple right next to the gurudwara. Holy hot pools for ritual bathing.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Manikaran.jpg?width=1200",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1200",
           duration: "30 min",
           elderlyFriendly: true,
-          mapsQuery: "Manikaran Shiva Temple",
+          mapsQuery: "Justa Birding Resort, Palampur",
+        },
+        {
+          name: "Evening sundowner on the lawn",
+          brief:
+            "The lawn faces straight at the Dhauladhar range. Sunset is around 7:15 pm in June — order pakoras, take a chair, watch the snow line turn pink.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Kangra_Valley.jpg?width=1200",
+          duration: "1.5 hr",
+          elderlyFriendly: true,
         },
       ],
       hotel: {
-        name: "Sumi Yashshree Suites & Spa",
-        category: "4★ riverside",
-        pricePerNight: 8200,
+        name: "Justa Birding Tea Suite & Spa, Palampur",
+        category: "Boutique 4★ tea estate",
+        pricePerNight: 10000,
         roomsNeeded: 5,
+        notes: "20 large tea-suite rooms set in a working tea estate. Spa, infinity-edge pool facing the Dhauladhar, organic kitchen, deodar terrace. Wheelchair access to main building; villas have 1-2 steps. Bookings open on Booking.com / hotel direct.",
       },
-      meals: "Breakfast at hotel · Langar at Manikaran (donate generously) · Dinner at Bhoj Café",
+      meals: "Breakfast at JW · Lunch en route (Hamirpur) · Welcome dinner at resort",
     },
     {
       index: 3,
       date: "2026-06-09",
-      title: "Kasol → Bir via Mandi",
-      city: "Bir",
+      title: "Resort day · tea walks",
+      city: "Palampur",
       summary:
-        "The single longer drive of the trip — 5 hours through the Beas gorge to Mandi (lunch) and onward to Bir. Highway most of the way, with one ghats section before Joginder Nagar. Arrive Bir mid-afternoon, settle in.",
-      heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Kangra_Valley.jpg?width=1600",
-      transfer: {
-        from: "Kasol",
-        to: "Bir",
-        distanceKm: 165,
-        durationHours: 5,
-        notes: "Plan an early start (8am). Mandi (~halfway) has a Punjabi dhaba called Mid Way Patiala — quick lunch break. Driver-share the last hour into Bir.",
-      },
-      attractions: [
-        {
-          name: "Bir Tibetan Colony walk",
-          brief:
-            "Once you arrive in Bir, the village itself is a small Tibetan settlement — colourful prayer flags, hand-painted houses, and a few unhurried cafés. Easy 30-min walk loop.",
-          photo:
-            "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1600&q=80",
-          duration: "45 min",
-          elderlyFriendly: true,
-          mapsQuery: "Bir Tibetan Colony",
-        },
-      ],
-      hotel: {
-        name: "Avasara Resort, Bir",
-        category: "Boutique 4★",
-        pricePerNight: 6800,
-        roomsNeeded: 5,
-        notes: "Cottage-style rooms with private decks looking at the Dhauladhar range. Family-run, good restaurant, easy parking for both Innovas.",
-      },
-      meals: "Breakfast at hotel · Lunch at Mid Way Patiala (Mandi) · Dinner at Avasara",
-    },
-    {
-      index: 4,
-      date: "2026-06-10",
-      title: "Bir Billing — paragliding & monasteries",
-      city: "Bir",
-      summary:
-        "Bir is the world's #2 paragliding site. Drive up to Billing (45 min) for the morning launch — tandem flight 25 min, landing at Bir. Afternoon: Sherab Ling Monastery (filming location for the Oscar-shortlisted 'Cup'). Evening: tea in the colony.",
-      heroImage:
-        "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=1600&q=80",
-      attractions: [
-        {
-          name: "Paragliding from Billing (2,400 m)",
-          brief:
-            "Tandem flight with a certified pilot — 20-25 min in the air over the Kangra valley, GoPro footage included. ₹3,000-3,500/pax. Elders welcome but the take-off & landing involve a short run; skip if knees are dodgy.",
-          photo:
-            "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=1600&q=80",
-          duration: "Half day with transfers",
-          mapsQuery: "Billing Paragliding Take Off Site",
-        },
-        {
-          name: "Sherab Ling Monastery",
-          brief:
-            "Seat of the 12th Tai Situpa, founded 1975 — gilded prayer hall with 14-ft Buddha. The 1999 film 'The Cup' was shot here. Calm, photogenic, often empty.",
-          photo:
-            "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
-          duration: "1 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Palpung Sherabling Monastery",
-        },
-        {
-          name: "Deer Park Institute",
-          brief:
-            "Buddhist study centre in Bir village — drop-in for the afternoon talk if timing permits (check schedule online). Beautiful gardens with prayer wheels for a quiet stroll.",
-          photo:
-            "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
-          duration: "1 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Deer Park Institute, Bir",
-        },
-      ],
-      hotel: {
-        name: "Avasara Resort, Bir",
-        category: "Boutique 4★",
-        pricePerNight: 6800,
-        roomsNeeded: 5,
-      },
-      meals: "Breakfast at hotel · Lunch at the Bir Café (post-flight) · Dinner at Garden Café",
-    },
-    {
-      index: 5,
-      date: "2026-06-11",
-      title: "Bir → Palampur tea estates → McLeodganj",
-      city: "McLeodganj",
-      summary:
-        "Short 2.5-hour drive through the Kangra valley. Stop at Palampur's working tea gardens for tasting, lunch at Norwood (heritage tea estate restaurant), then climb to McLeodganj — the Dalai Lama's home-in-exile.",
+        "No driving. Sleep in. Late breakfast on the lawn. Morning: 1-hour gentle walk through the tea pluckers' rows with a hotel guide. Afternoon: spa appointments (book on arrival), or just the pool and a book. Sunset on the deodar deck.",
       heroImage:
         "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1600",
-      transfer: {
-        from: "Bir",
-        to: "McLeodganj",
-        distanceKm: 65,
-        durationHours: 2.5,
-        notes: "All paved, two-lane state highway. The McLeodganj climb (last 30 min) is steep but smooth.",
-      },
       attractions: [
         {
-          name: "Palampur Tea Estates",
+          name: "Guided tea-garden walk",
           brief:
-            "The northwesternmost tea-growing region of India. Walk a row or two with a guide (Wah Tea Estate), see processing, taste 1st and 2nd flush. Black tea here has a distinctive citrus note.",
+            "Free morning activity at the resort. Walk past pluckers (women carrying conical baskets), into the small processing shed where leaves are withered and rolled. Ends with a tasting of 1st flush vs 2nd flush.",
           photo:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1200",
           duration: "1.5 hr",
@@ -348,225 +254,211 @@ export const himachal: Plan = {
           mapsQuery: "Wah Tea Estate, Palampur",
         },
         {
-          name: "Andretta Pottery (optional 20-min detour)",
+          name: "Himalayan Ayurvedic spa",
           brief:
-            "Studio founded 1983 by Mansimran Singh — Sardar Gurcharan Singh's son, who learnt under Bernard Leach. Drop in to watch wheel-throwing or buy beautiful seconds at half price.",
+            "Justa's in-house Ayurveda menu — Abhyanga (₹3,200), Shirodhara (₹3,800), Pizhichil (₹4,500). Book by 10am for the same afternoon. Treatment rooms are single-level.",
           photo:
-            "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
-          duration: "45 min",
+            "https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?auto=format&fit=crop&w=1600&q=80",
+          duration: "90 min",
           elderlyFriendly: true,
-          mapsQuery: "Andretta Pottery and Crafts Society",
+        },
+        {
+          name: "Infinity pool afternoon",
+          brief:
+            "The pool faces the Dhauladhar. Heated, open till 7pm in summer. Towels & light snack service on the loungers.",
+          photo:
+            "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1600&q=80",
+          duration: "Afternoon",
+          elderlyFriendly: true,
         },
       ],
       hotel: {
-        name: "Fortune Park Moksha, McLeodganj",
-        category: "4★ ITC Fortune",
-        pricePerNight: 7600,
+        name: "Justa Birding Tea Suite & Spa, Palampur",
+        category: "Boutique 4★ tea estate",
+        pricePerNight: 10000,
         roomsNeeded: 5,
-        notes: "On Mall Road, lift access, valley-view rooms. Walking distance to the Dalai Lama temple — saves driving in McLeodganj's tiny lanes.",
       },
-      meals: "Breakfast at Avasara · Lunch at Norwood Green (Palampur) · Dinner on Mall Road",
+      meals: "All meals at resort — try the Himachali dham thali for dinner",
+    },
+    {
+      index: 4,
+      date: "2026-06-10",
+      title: "Optional Bir Billing day · or another resort day",
+      city: "Palampur",
+      summary:
+        "Choose your own day. Adventurous half of the group can do Bir Billing (1 hr drive each way, paragliding tandem flight 25 min). Quieter half stays at the resort — book massages, swim, read. Re-converge for dinner.",
+      heroImage:
+        "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=1600&q=80",
+      attractions: [
+        {
+          name: "Paragliding from Billing (optional)",
+          brief:
+            "Bir is the world's #2 paragliding site. Drive to Billing (45 min), tandem flight 20-25 min with a certified pilot, landing back at Bir village. ₹3,000-3,500/pax, GoPro footage included. Walk-on take-off — skip if knees are not great.",
+          photo:
+            "https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?auto=format&fit=crop&w=1600&q=80",
+          duration: "Half day with transfers",
+          mapsQuery: "Billing Paragliding Take Off Site",
+        },
+        {
+          name: "Sherab Ling Monastery (en route)",
+          brief:
+            "If you're already on the Bir road, stop at Sherab Ling — seat of the 12th Tai Situpa, founded 1975. The 1999 film 'The Cup' was shot here. Gilded prayer hall, 14-ft Buddha. Calm, almost empty on weekdays.",
+          photo:
+            "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
+          duration: "45 min",
+          elderlyFriendly: true,
+          mapsQuery: "Palpung Sherabling Monastery",
+        },
+        {
+          name: "Andretta Pottery (alternative half-day)",
+          brief:
+            "Quieter half-day from the resort — 14 km / 30 min to Andretta. Mansimran Singh's pottery studio (Leach-Hamada lineage). Watch wheel throwing, buy seconds at half price. Norah Richards' adobe house & garden next door.",
+          photo:
+            "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
+          duration: "2 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Andretta Pottery and Crafts Society",
+        },
+        {
+          name: "Stay at the resort (also a valid choice)",
+          brief:
+            "If everyone's happy at Justa, just stay. The whole pitch of this revised plan is that you've earned the right to not 'do things'.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1200",
+          duration: "All day",
+          elderlyFriendly: true,
+        },
+      ],
+      hotel: {
+        name: "Justa Birding Tea Suite & Spa, Palampur",
+        category: "Boutique 4★ tea estate",
+        pricePerNight: 10000,
+        roomsNeeded: 5,
+      },
+      meals: "Breakfast at resort · Lunch at Bir Café (or resort) · Dinner together at resort",
+    },
+    {
+      index: 5,
+      date: "2026-06-11",
+      title: "Slow day · Baijnath temple at sunset",
+      city: "Palampur",
+      summary:
+        "Resort morning. Lazy lunch. Late afternoon: a short 25-min drive to the 13th-century Baijnath Shiva temple for the evening aarti — a quietly beautiful Nagara-style temple with two enormous deodars at the entrance. Back to the resort for dinner.",
+      heroImage:
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Kangra_Valley.jpg?width=1600",
+      attractions: [
+        {
+          name: "Baijnath Temple (aarti at 7pm)",
+          brief:
+            "Built 1204 — one of the oldest standing Shiva temples in India. Nagara-style shikara, intricate stone carving, two giant deodars at the gate. Sunset aarti is short, atmospheric. Drive: 25 min from the resort.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Kangra_Valley.jpg?width=1200",
+          duration: "1.5 hr",
+          elderlyFriendly: true,
+          mapsQuery: "Baijnath Shiva Temple, Himachal Pradesh",
+        },
+        {
+          name: "Tea-pluckers' breakfast walk (early morning)",
+          brief:
+            "Optional sunrise activity — pluckers start at 6am. Walk with them for 30 min, watch the day begin in the valley. Hot tea served back at the resort lawn at 7:30. Beautifully meditative.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1200",
+          duration: "1 hr",
+          elderlyFriendly: true,
+        },
+        {
+          name: "Pool & book afternoon",
+          brief:
+            "The picked activity. Pool, lounger, book, lemonade. Sunset on the lawn. Repeat until dinner.",
+          photo:
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Palampur.jpg?width=1200",
+          duration: "All afternoon",
+          elderlyFriendly: true,
+        },
+      ],
+      hotel: {
+        name: "Justa Birding Tea Suite & Spa, Palampur",
+        category: "Boutique 4★ tea estate",
+        pricePerNight: 10000,
+        roomsNeeded: 5,
+      },
+      meals: "All meals at resort · Try the trout pollichathu",
     },
     {
       index: 6,
       date: "2026-06-12",
-      title: "McLeodganj — Dalai Lama temple & Bhagsu",
-      city: "McLeodganj",
+      title: "Palampur → Chandigarh (return)",
+      city: "Chandigarh",
       summary:
-        "Morning: Tsuglagkhang complex, the official residence of the 14th Dalai Lama, with the Tibet Museum next door. Afternoon: 1.5 km drive to Bhagsunag Temple + waterfall. Sunset at Naddi viewpoint.",
+        "Lazy breakfast. Check out by 11am. 6-hour drive back down through Hamirpur and Bilaspur. Lunch en route. Check in at the same JW Marriott by 4pm for one last comfortable night before the long highway run home.",
       heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Bhagsu_waterfall.jpg?width=1600",
+        "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
+      transfer: {
+        from: "Palampur",
+        to: "Chandigarh",
+        distanceKm: 280,
+        durationHours: 6,
+        notes: "Mostly downhill — gentler than the climb up. Lunch at Bilaspur (Café Sunset View, Gobind Sagar lake views).",
+      },
       attractions: [
         {
-          name: "Tsuglagkhang Complex (Dalai Lama Temple)",
+          name: "Gobind Sagar lake view (Bilaspur)",
           brief:
-            "The Dalai Lama's official residence-in-exile since 1959. The main prayer hall has a 3-m gilded Shakyamuni Buddha. If His Holiness is in town and giving a public teaching, you can attend (free, register online).",
+            "Massive reservoir behind Bhakra Dam — startlingly blue, set in brown hills. Photo stop only; 15 min off-highway.",
           photo:
             "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
+          duration: "30 min",
+          elderlyFriendly: true,
+          mapsQuery: "Gobind Sagar Lake, Bilaspur",
+        },
+        {
+          name: "Chandigarh Rock Garden (evening)",
+          brief:
+            "Nek Chand's outsider-art masterpiece — a 40-acre garden built entirely from urban waste (bottle caps, broken bangles, glass shards) over 18 secret years. Family-favourite, easy paths.",
+          photo:
+            "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1600&q=80",
           duration: "1.5 hr",
           elderlyFriendly: true,
-          mapsQuery: "Tsuglagkhang Complex, McLeod Ganj",
-        },
-        {
-          name: "Tibet Museum",
-          brief:
-            "Inside the same complex — the modern Tibetan diaspora story told through photographs, escape testimonies, and artefacts smuggled out of Lhasa. Moving and educational, plan 45 min.",
-          photo:
-            "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1600&q=80",
-          duration: "45 min",
-          elderlyFriendly: true,
-          mapsQuery: "Tibet Museum, Dharamshala",
-        },
-        {
-          name: "Bhagsunag Temple & Waterfall",
-          brief:
-            "A 16th-century Shiva temple with a freshwater pool, then a 1 km uphill walk (gentle) to a 30-ft seasonal waterfall — at peak flow in June. Cafés around the falls.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Bhagsu_waterfall.jpg?width=1200",
-          duration: "1.5 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Bhagsu Waterfall, McLeodganj",
-        },
-        {
-          name: "Naddi Viewpoint (sunset)",
-          brief:
-            "5 km from McLeodganj — a roadside platform looking straight at the Dhauladhar range. On a clear evening the peaks turn pink. Park-and-walk, 50 m to the rail.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Kangra_Valley.jpg?width=1200",
-          duration: "1 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Naddi Viewpoint, Dharamshala",
+          mapsQuery: "Rock Garden of Chandigarh",
         },
       ],
       hotel: {
-        name: "Fortune Park Moksha, McLeodganj",
-        category: "4★ ITC Fortune",
-        pricePerNight: 7600,
+        name: "JW Marriott Chandigarh",
+        category: "5★ city",
+        pricePerNight: 7500,
         roomsNeeded: 5,
       },
-      meals: "Breakfast at hotel · Lunch at Norling House (Tibetan) · Dinner at Tibet Kitchen",
+      meals: "Breakfast at Justa · Lunch at Bilaspur · Dinner at JW (or Pal Dhaba in Sector 28 for old-school butter chicken)",
     },
     {
       index: 7,
       date: "2026-06-13",
-      title: "McLeodganj → Dalhousie",
-      city: "Dalhousie",
-      summary:
-        "Drive 4 hours via Pathankot to Dalhousie — colonial Brit-era hill town (1854) named after Lord Dalhousie. Half the drive is fast 4-lane highway (down from Kangra to Pathankot), then climbing 2,000 m to the town. Afternoon stroll on Mall Road.",
-      heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Dalhousie_view.jpg?width=1600",
-      transfer: {
-        from: "McLeodganj",
-        to: "Dalhousie",
-        distanceKm: 130,
-        durationHours: 4,
-        notes: "Descend to Pathankot (good highway, 2h), then climb up — 2h of hill driving with hairpins. Lunch at Pathankot, fuel up there.",
-      },
-      attractions: [
-        {
-          name: "Gandhi Chowk & Mall Road",
-          brief:
-            "Dalhousie's central plaza — old chapels, the Subhash Chowk-Mall Road circuit (a 4 km flat loop). Mostly pedestrian-only after 7 pm. Plenty of benches.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Dalhousie_view.jpg?width=1200",
-          duration: "1.5 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Gandhi Chowk, Dalhousie",
-        },
-        {
-          name: "St John's Church",
-          brief:
-            "1863 Scottish Presbyterian church with original stained glass and a clock tower — Dalhousie's oldest building. 5-min stop on Mall Road.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Dalhousie_view.jpg?width=1200",
-          duration: "20 min",
-          elderlyFriendly: true,
-          mapsQuery: "St John's Church, Dalhousie",
-        },
-      ],
-      hotel: {
-        name: "Grand View Hotel, Dalhousie",
-        category: "4★ heritage",
-        pricePerNight: 7200,
-        roomsNeeded: 5,
-        notes: "Built 1934 on a ridge with panoramic Dhauladhar views. Wood-floor rooms, open fireplaces, two terraces. Lift between floors.",
-      },
-      meals: "Breakfast at Moksha · Lunch at Pathankot (Café Saurav) · Dinner at hotel",
-    },
-    {
-      index: 8,
-      date: "2026-06-14",
-      title: "Khajjiar 'Mini Switzerland' + Chamba",
-      city: "Dalhousie",
-      summary:
-        "Long but pretty day-trip loop. 24 km to Khajjiar — a perfectly round saucer-meadow ringed by deodars, with a lake in the middle. Lunch there. Continue 24 km to Chamba — 6th-century temple town, Bhuri Singh Museum. Back to Dalhousie by 7pm.",
-      heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Khajjiar.jpg?width=1600",
-      transfer: {
-        from: "Dalhousie",
-        to: "Khajjiar → Chamba → Dalhousie",
-        distanceKm: 110,
-        durationHours: 5,
-        notes: "Driving over the day adds up — but stops are 30-90 min each, so it never feels long. Forest road most of the way, no traffic.",
-      },
-      attractions: [
-        {
-          name: "Khajjiar Meadow",
-          brief:
-            "Called 'Mini Switzerland' by a Swiss diplomat in 1992 (a plaque commemorates the moment). A flat, grassy bowl with a small pond, pony rides, zorbing for the kids, a 9th-century Khajji Nag temple at the edge.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Khajjiar.jpg?width=1200",
-          duration: "2 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Khajjiar, Himachal Pradesh",
-        },
-        {
-          name: "Laxmi Narayan Temple Complex, Chamba",
-          brief:
-            "Six shikara-style temples in stone, the oldest from the 10th century, all dedicated to Vishnu and Shiva. Beautiful carvings, very photogenic. Located in old Chamba town.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Chamba_Town.jpg?width=1200",
-          duration: "1 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Lakshmi Narayan Temple, Chamba",
-        },
-        {
-          name: "Bhuri Singh Museum",
-          brief:
-            "Founded 1908 — houses Chamba's famous Pahari miniature paintings, Basohli school, royal weapons, and inscribed copper plates. Air-conditioned, single-level — gentle on the parents.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Chamba_Town.jpg?width=1200",
-          duration: "1 hr",
-          elderlyFriendly: true,
-          mapsQuery: "Bhuri Singh Museum, Chamba",
-        },
-        {
-          name: "Chamba Chowgan",
-          brief:
-            "A grassy strip in the middle of town used historically for the Minjar festival cattle fair. Now a public garden — quick walk-around. Locals chat on benches.",
-          photo:
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Chamba_Town.jpg?width=1200",
-          duration: "30 min",
-          elderlyFriendly: true,
-          mapsQuery: "Chamba Chaugan",
-        },
-      ],
-      hotel: {
-        name: "Grand View Hotel, Dalhousie",
-        category: "4★ heritage",
-        pricePerNight: 7200,
-        roomsNeeded: 5,
-      },
-      meals: "Breakfast at Grand View · Lunch at Hotel Mini Swiss (Khajjiar) · Dinner at Cafe Dalhousie",
-    },
-    {
-      index: 9,
-      date: "2026-06-15",
-      title: "Dalhousie → Dharamshala airport → Jaipur",
+      title: "Chandigarh → Jaipur · home",
       city: "Jaipur",
       summary:
-        "Slow morning, late check-out. 3-hour drive down to Gaggal/Kangra airport (DHM). Drop the rental cars at the airport rental desks. Mid-day flight via Delhi.",
+        "Early start (07:00). 8-hour drive home down NH-152 → NH-48. Lunch at Karnal Haveli (the rest-stop you didn't try on the way up). Home in Jaipur by sunset.",
       heroImage:
-        "https://commons.wikimedia.org/wiki/Special:FilePath/Kangra_Valley.jpg?width=1600",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1600&q=80",
       transfer: {
-        from: "Dalhousie",
-        to: "Dharamshala Airport (DHM)",
-        distanceKm: 110,
-        durationHours: 3,
-        notes: "Descend through Pathankot road, then turn south for Gaggal. Leave 4 hours before flight in case of pre-monsoon thunderstorm slowdowns.",
+        from: "Chandigarh",
+        to: "Jaipur (home)",
+        distanceKm: 520,
+        durationHours: 8.5,
+        notes: "Same highway, mirrored. Aim to leave by 7am to clear Delhi-NCR before evening rush.",
       },
       attractions: [
         {
-          name: "Last hill-station breakfast",
+          name: "Karnal Haveli rest-stop",
           brief:
-            "Cafe Dalhousie or Sher-e-Punjab — order a Himachali siddu (steamed wheat bun stuffed with poppy seeds), ghee on top, a final cup of Kangra tea.",
+            "Heritage-style rest stop on NH-152 — pleasant garden seating, separate clean restrooms (rare on this highway), full Indian + Continental menu. Better lunch stop than Murthal on the return.",
           photo:
             "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=1600&q=80",
           duration: "1 hr",
           elderlyFriendly: true,
+          mapsQuery: "Karnal Haveli, Karnal",
         },
       ],
-      meals: "Breakfast at hotel · Lunch at airport · Dinner home in Jaipur",
+      meals: "Breakfast at JW · Lunch at Karnal Haveli · Dinner at home",
     },
   ],
 };

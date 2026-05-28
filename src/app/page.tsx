@@ -58,13 +58,14 @@ export default function Home() {
               </div>
             ))}
 
-            <Row label="Climate (Jun 7-15)" values={["Monsoon onset", "Pre-monsoon clear", "Pre-monsoon"]} />
-            <Row label="Daytime temp" values={["22-30°C", "18-26°C", "18-24°C"]} />
-            <Row label="Self-drive?" values={["Yes ✓", "Yes ✓", "Mostly no"]} />
-            <Row label="Longest drive" values={["4 hr", "5 hr (once)", "7 hr+"]} />
-            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐", "⭐⭐⭐"]} />
-            <Row label="Wow factor" values={["Houseboat", "Bir paragliding", "Kanchenjunga"]} />
-            <Row label="Budget" values={["₹5.3-7.6L", "₹6.2-8.2L", "₹9.2-12.2L"]} />
+            <Row label="Length" values={["9 days", "7 days", "9 days"]} />
+            <Row label="Travel mode" values={["Fly + self-drive", "Drive from Jaipur", "Fly + chauffeur"]} />
+            <Row label="Climate" values={["Monsoon onset", "Pre-monsoon clear", "Pre-monsoon"]} />
+            <Row label="Pace" values={["Relaxed (Marari 2N)", "Chill (1 resort 4N)", "Active 7-stop loop"]} />
+            <Row label="Longest drive" values={["4 hr", "8.5 hr (highway)", "7 hr+"]} />
+            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐"]} />
+            <Row label="Wow factor" values={["Houseboat", "Tea-estate spa", "Kanchenjunga"]} />
+            <Row label="Budget" values={["₹5.3-7.6L", "₹5.0-6.1L", "₹9.2-12.2L"]} />
           </div>
         </section>
 

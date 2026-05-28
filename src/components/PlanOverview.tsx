@@ -14,7 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import type { Plan, WeatherNote } from "@/lib/types";
-import { formatINR } from "@/lib/utils";
+import { formatINR, shortDate } from "@/lib/utils";
 
 export function PlanOverview({ plan }: { plan: Plan }) {
   return (
@@ -40,15 +40,18 @@ export function PlanOverview({ plan }: { plan: Plan }) {
         </p>
       </header>
 
-      {/* Flights */}
-      <Section icon={<Plane size={14} />} label="Flights">
+      {/* Travel */}
+      <Section
+        icon={<Plane size={14} />}
+        label={plan.slug === "himachal" ? "Drive — Jaipur ↔ Palampur" : "Flights"}
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <FlightCard
-            title="Outbound · June 7"
+            title={plan.slug === "himachal" ? "Outbound (Days 1–2)" : `Outbound · ${shortDate(plan.startDate)}`}
             flights={plan.flights.outbound}
           />
           <FlightCard
-            title="Return · June 15"
+            title={plan.slug === "himachal" ? "Return (Days 6–7)" : `Return · ${shortDate(plan.endDate)}`}
             flights={plan.flights.return}
           />
         </div>
@@ -76,17 +79,23 @@ export function PlanOverview({ plan }: { plan: Plan }) {
                       {opt.vehicle}
                     </h4>
                     <div className="text-sm font-semibold tabular-nums">
-                      {formatINR(opt.perDayPrice * opt.totalDays * opt.countNeeded)}
+                      {opt.perDayPrice > 0
+                        ? formatINR(opt.perDayPrice * opt.totalDays * opt.countNeeded)
+                        : "Fuel only"}
                     </div>
                   </div>
                   <div className="flex items-center gap-2 mt-0.5 text-[11px] text-muted">
                     <span className="inline-flex items-center gap-1">
                       <Users size={11} /> {opt.capacity * opt.countNeeded} seats
                     </span>
-                    <span>·</span>
-                    <span>
-                      {formatINR(opt.perDayPrice)} × {opt.totalDays} days × {opt.countNeeded}
-                    </span>
+                    {opt.perDayPrice > 0 && (
+                      <>
+                        <span>·</span>
+                        <span>
+                          {formatINR(opt.perDayPrice)} × {opt.totalDays} days × {opt.countNeeded}
+                        </span>
+                      </>
+                    )}
                     <span>·</span>
                     <span
                       className={
@@ -249,10 +258,16 @@ function FlightCard({
               <div className="text-[11px] text-muted">
                 {f.duration} · {f.stops}
               </div>
-              <div className="text-sm font-semibold tabular-nums">
-                {formatINR(f.pricePerPerson)}
-                <span className="text-[10px] font-normal text-muted">/pax</span>
-              </div>
+              {f.pricePerPerson > 0 ? (
+                <div className="text-sm font-semibold tabular-nums">
+                  {formatINR(f.pricePerPerson)}
+                  <span className="text-[10px] font-normal text-muted">/pax</span>
+                </div>
+              ) : (
+                <div className="text-[10px] uppercase tracking-wider text-emerald-700 font-medium">
+                  Fuel only
+                </div>
+              )}
             </div>
           </div>
         ))}
