@@ -20,12 +20,12 @@ export default function Home() {
           className="text-[2.5rem] sm:text-6xl leading-[0.95] tracking-tight font-medium mb-3"
           style={{ fontFamily: "var(--font-fraunces)" }}
         >
-          Three plans.
+          Lahaul it is.
           <br />
-          <span className="italic text-muted">One unforgettable</span> week.
+          <span className="italic text-muted">One high-mountain</span> week.
         </h1>
         <p className="text-base sm:text-lg text-muted max-w-xl leading-snug">
-          For 11 of us — two families, four parents, June 7 to 15. Tap a card to walk through day-by-day, or compare side-by-side first.
+          For 11 of us — two families, four parents, June 7 to 13. The plan is set: Dobhi, Jispa, a run at Shinku La, then Manali. Kerala and Palampur stay as the warm-weather backups. Tap a card to walk through it day-by-day.
         </p>
       </header>
 
@@ -58,15 +58,15 @@ export default function Home() {
               </div>
             ))}
 
-            <Row label="Length" values={["9 days", "7 days", "9 days"]} />
-            <Row label="Travel" values={["Fly + drive", "Drive from JAI", "Drive from JAI"]} />
-            <Row label="Bases" values={["6 stops", "1 resort (4N)", "Mashobra 2N · Kalpa 2N · Sangla 1N"]} />
-            <Row label="Highest point" values={["Munnar 5,800ft", "Palampur 4,300ft", "Chitkul 11,300ft"]} />
-            <Row label="Longest drive" values={["4 hr", "8.5 hr highway", "8 hr (Day 4)"]} />
-            <Row label="Return capped at" values={["—", "—", "≤8 hr/day"]} />
-            <Row label="For elders" values={["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐"]} />
-            <Row label="Vibe" values={["Houseboat + beach", "Tea estate spa", "Apple country + Tibet edge"]} />
-            <Row label="Budget" values={["₹5.3-7.6L", "₹5.0-6.1L", "₹5.4-6.9L"]} />
+            <Row label="Length" values={["7 days", "9 days", "7 days"]} />
+            <Row label="Travel" values={["Drive from JAI", "Fly + drive", "Drive from JAI"]} />
+            <Row label="Bases" values={["Dobhi · Jispa · Manali 2N", "6 stops", "1 resort (4N)"]} />
+            <Row label="Highest point" values={["Shinku La 16,700ft", "Munnar 5,800ft", "Palampur 4,300ft"]} />
+            <Row label="Longest drive" values={["~10 hr · Shinku La day", "4 hr", "8.5 hr highway"]} />
+            <Row label="Altitude" values={["High — AMS risk", "Sea level", "Low hills"]} />
+            <Row label="For elders" values={["⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐"]} />
+            <Row label="Vibe" values={["Atal Tunnel · high passes", "Houseboat + beach", "Tea estate spa"]} />
+            <Row label="Budget" values={["₹3.0-3.9L", "₹5.3-7.6L", "₹5.0-6.1L"]} />
           </div>
         </section>
 
@@ -115,6 +115,8 @@ function labelFor(slug: string) {
       return "Rishikesh";
     case "kinnaur":
       return "Kinnaur";
+    case "lahaul":
+      return "Lahaul";
     default:
       return slug;
   }

@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "www.keralatourism.org" },
       { protocol: "https", hostname: "sikkimtourism.gov.in" },
       { protocol: "https", hostname: "**.googleusercontent.com" },
+      { protocol: "https", hostname: "a0.muscache.com" },
+      { protocol: "https", hostname: "dynamic-media-cdn.tripadvisor.com" },
     ],
   },
 };
