@@ -13,7 +13,7 @@ export const lahaul: Plan = {
   heroImage:
     "https://commons.wikimedia.org/wiki/Special:FilePath/Lahaul_Valley.jpg?width=1600",
   description:
-    "The final plan — 7 days, self-drive from Jaipur. Two warm-up nights getting to the mountains (Chandigarh, then Dobhi just below Manali), then over the 9 km Atal Tunnel into Lahaul to sleep at Jispa (3,200 m) on the Bhaga river. A big day up toward Shinku La — the under-construction road to Zanskar that tops out above 5,000 m — then drop back across the tunnel for two nights in Manali before the long highway run home via Chandigarh. High, cold, spectacular; paced with hard-day warnings because the altitude and the road are real.",
+    "The final plan — 7 days, self-drive from Jaipur. Two warm-up nights getting to the mountains (Chandigarh, then Prini on the edge of Manali), then over the 9 km Atal Tunnel into Lahaul to sleep at Jispa (3,200 m) on the Bhaga river. A big day up toward Shinku La — the under-construction road to Zanskar that tops out above 5,000 m — then drop back across the tunnel for two nights in Manali before the long highway run home via Chandigarh. High, cold, spectacular; paced with hard-day warnings because the altitude and the road are real.",
 
   flights: {
     outbound: [
@@ -29,24 +29,24 @@ export const lahaul: Plan = {
         pricePerPerson: 0,
       },
       {
-        airline: "Chandigarh → Dobhi",
-        flightNo: "Day 2 · Mon · ~290 km",
+        airline: "Chandigarh → Dobhi (Shasha, Prini)",
+        flightNo: "Day 2 · Mon · ~305 km",
         from: "Chandigarh",
-        to: "Dobhi (Kullu valley, ~20 km below Manali)",
+        to: "Shasha Boutique Stays, Prini (Manali)",
         depart: "06:30",
-        arrive: "14:30",
-        duration: "~8h on the road",
+        arrive: "15:00",
+        duration: "~8.5h on the road",
         stops: "Kiratpur–Manali expressway · Mandi · Pandoh · lunch en route",
         pricePerPerson: 0,
       },
       {
-        airline: "Dobhi → Jispa (over the Atal Tunnel)",
-        flightNo: "Day 3 · Tue · ~120 km",
-        from: "Dobhi",
+        airline: "Prini → Jispa (over the Atal Tunnel)",
+        flightNo: "Day 3 · Tue · ~105 km",
+        from: "Prini (Manali)",
         to: "Jispa (Bhaga valley, 3,200 m)",
         depart: "08:30",
-        arrive: "13:30",
-        duration: "~5h on the road",
+        arrive: "13:00",
+        duration: "~4.5h on the road",
         stops: "Manali · Atal Tunnel · Sissu · Tandi · Keylong",
         pricePerPerson: 0,
       },
@@ -174,7 +174,7 @@ export const lahaul: Plan = {
     { label: "Fuel (~2,400 km × 2 cars × ₹12/km hill rates)", amount: 57600, note: "Hill stretches drink more than the expressway" },
     { label: "Tolls (NH-152D + Kiratpur–Manali expressway, both ways)", amount: 12000 },
     { label: "Hotel — Chandigarh (Days 1 & 6, 5 rooms × 2N)", amount: 28000, note: "Top pick Treebo JD Residency Mohali @ ~₹2,800/room" },
-    { label: "Stay — Dobhi (Day 2, Shasha Boutique Stays, ~3 units)", amount: 16500, note: "Airbnb · ~₹5,500/unit (each sleeps ~4)" },
+    { label: "Stay — Prini/Manali (Day 2, Shasha Boutique Stays, ~3 units)", amount: 16500, note: "Airbnb · ~₹5,500/unit (each sleeps ~4)" },
     { label: "Hotel — Jispa (Day 3, Zhe Yul, 5 rooms × 1N)", amount: 21000, note: "@ ~₹4,200/room on the Bhaga river" },
     { label: "Hotel — Manali (Days 4-5, 5 rooms × 2N)", amount: 45000, note: "Snow Valley Resorts / similar @ ~₹4,500/room" },
     { label: "Local 4×4 hire — Shinku La day (2 vehicles)", amount: 16000, note: "Day 4 out-and-back; protects your own cars at altitude" },
@@ -195,7 +195,7 @@ export const lahaul: Plan = {
       heroImage:
         "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1600&q=80",
       transfer: {
-        from: "Jaipur (home)",
+        from: "Jaipur",
         to: "Chandigarh",
         distanceKm: 516,
         durationHours: 8,
@@ -270,15 +270,15 @@ export const lahaul: Plan = {
       title: "Chandigarh → Dobhi (below Manali)",
       city: "Dobhi",
       summary:
-        "Monday. The day you reach the mountains. Onto the Kiratpur–Manali expressway, up the Beas through Mandi and the Pandoh dam, and into the Kullu valley. Dobhi sits about 20 km short of Manali at the mouth of the Fojal valley — quieter than Manali town and a perfect soft-altitude night before Lahaul. Tonight: Shasha Boutique Stays.",
+        "Monday. The day you reach the mountains. Onto the Kiratpur–Manali expressway, up the Beas through Mandi and the Pandoh dam into the Kullu valley. Tonight's stay — Shasha Boutique Stays — sits in Prini, a quiet apple-orchard village about 3 km past Manali Mall Road (you may hear the area loosely called Dobhi). A calm, soft-altitude night before crossing into Lahaul tomorrow.",
       heroImage:
         "https://commons.wikimedia.org/wiki/Special:FilePath/Manali.jpg?width=1600",
       transfer: {
         from: "Chandigarh",
-        to: "Dobhi (Kullu valley)",
-        distanceKm: 290,
-        durationHours: 8,
-        notes: "Fast on the Kiratpur–Manali expressway as far as Mandi, then the slower, winding Mandi–Pandoh–Kullu river road. Altitude climbs from 350 m to ~1,900 m — gentle. Leave by 6:30; aim to be off the Kullu road before evening traffic.",
+        to: "Prini, Manali",
+        distanceKm: 305,
+        durationHours: 8.5,
+        notes: "Fast on the Kiratpur–Manali expressway as far as Mandi, then the slower, winding Mandi–Pandoh–Kullu river road through Manali to Prini (the stay is ~3 km past Mall Road). Altitude climbs from 350 m to ~1,950 m — gentle. Leave by 6:30; aim to be off the Kullu road before evening traffic.",
       },
       attractions: [
         {
@@ -289,7 +289,7 @@ export const lahaul: Plan = {
             "https://a0.muscache.com/im/pictures/hosting/Hosting-1529625513852095824/original/501ea815-213f-4be2-be54-aaf5af0f58ad.jpeg?im_w=720",
           duration: "Stay",
           elderlyFriendly: true,
-          mapsQuery: "Shasha Boutique Stays, Manali",
+          mapsQuery: "Shasha Boutique Stays, Prini, Manali",
         },
         {
           name: "Pandoh Dam viewpoint (en route)",
@@ -302,24 +302,24 @@ export const lahaul: Plan = {
           mapsQuery: "Pandoh Dam, Himachal Pradesh",
         },
         {
-          name: "Kullu valley & the Beas",
+          name: "Prini village & the Beas",
           brief:
-            "The last stretch into Dobhi runs beside the Beas through apple and pear country. June is fruit-set season — green orchards, white water, deodar slopes. Easy riverside walks near the stay in the evening.",
+            "The last stretch into Prini runs beside the Beas through apple and pear country, with Naggar Castle and the old Manali on the slopes around. June is fruit-set season — green orchards, white water, deodar. Easy riverside walks near the stay in the evening.",
           photo:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Manali_City.jpg?width=1600",
           duration: "Evening",
           elderlyFriendly: true,
-          mapsQuery: "Dobhi, Kullu, Himachal Pradesh",
+          mapsQuery: "Prini, Manali, Himachal Pradesh",
         },
       ],
       hotel: {
-        name: "Shasha Boutique Stays, Dobhi (Airbnb)",
-        category: "Boutique B&B · 4.8★ · Altitude ~1,900 m",
+        name: "Shasha Boutique Stays, Prini · Manali (Airbnb)",
+        category: "Boutique B&B · 4.8★ · Altitude ~1,950 m",
         pricePerNight: 5500,
         roomsNeeded: 3,
         bookingUrl: "https://www.airbnb.co.in/rooms/1529625513852095824",
         notes:
-          "Multi-unit boutique stay near Manali; each unit is 2BR/2bath and sleeps ~4, so the group needs ~3 units (~₹5,500/unit). 4.8★ host, breakfast available. Book all units in one go and message the host with arrival time — the final Kullu-valley turn is easier with directions. Maps: search 'Shasha Boutique Stays, Manali'.",
+          "Multi-unit boutique B&B in Prini, ~3 km past Manali Mall Road (VPO Prini) — NOT the Dobhi 20 km south near Naggar, so navigate to 'Shasha Boutique Stays, Prini, Manali' (the bare word 'Dobhi' points to a different town entirely). Each unit is 2BR/2bath and sleeps ~4, so the group needs ~3 units (~₹5,500/unit). 4.8★ host, breakfast available. Book all units together and message the host your arrival time for the final lane directions.",
       },
       meals: "Breakfast at the Chandigarh hotel · Lunch at Mandi/Pandoh · Dinner at the stay",
     },
@@ -333,11 +333,11 @@ export const lahaul: Plan = {
       heroImage:
         "https://commons.wikimedia.org/wiki/Special:FilePath/Lahaul_Valley.jpg?width=1600",
       transfer: {
-        from: "Dobhi",
-        to: "Jispa (Bhaga valley)",
-        distanceKm: 120,
-        durationHours: 5,
-        notes: "Manali → Atal Tunnel south portal ~25 km, through the tunnel to Sissu, then Sissu → Tandi → Keylong → Jispa. Altitude rises to 3,200 m — go slow, hydrate, light lunch. Fill BOTH cars at the Tandi fuel pump: it's the last reliable fuel before Leh.",
+        from: "Prini, Manali",
+        to: "Jispa",
+        distanceKm: 105,
+        durationHours: 4.5,
+        notes: "Prini → Manali → Atal Tunnel south portal (~28 km), through the tunnel to Sissu, then Sissu → Tandi → Keylong → Jispa. Altitude rises to 3,200 m — go slow, hydrate, light lunch. Fill BOTH cars at the Tandi fuel pump: it's the last reliable fuel before Leh.",
       },
       attractions: [
         {
@@ -403,7 +403,7 @@ export const lahaul: Plan = {
         "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1600&q=80",
       transfer: {
         from: "Jispa",
-        to: "Manali (via Darcha · Shinku La · Atal Tunnel)",
+        to: "Manali",
         distanceKm: 220,
         durationHours: 10,
         notes: "Jispa → Darcha ~8 km. Darcha → up toward Shinku La is rough, 4×4-favoured, with snowmelt streams — go as high as conditions and the group allow, not necessarily the very top. Then back to Jispa and on to Manali (~95 km / 4h via the tunnel). Be off the high ground by early afternoon.",
@@ -582,7 +582,7 @@ export const lahaul: Plan = {
         "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1600&q=80",
       transfer: {
         from: "Chandigarh",
-        to: "Jaipur (home)",
+        to: "Jaipur",
         distanceKm: 516,
         durationHours: 8,
         notes: "Same NH-152D expressway, mirrored. Leave by 7am to clear the Delhi ring before the evening build-up. Easy, fast road — just long.",
